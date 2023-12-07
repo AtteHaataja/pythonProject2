@@ -14,7 +14,7 @@ class VideoTransformer(VideoTransformerBase):
 
 def main():
     st.title("WebRTC Example")
-    webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
+    webrtc_streamer(key="example", video_processor_factory=VideoTransformer)
 
 
 if __name__ == "__main__":
